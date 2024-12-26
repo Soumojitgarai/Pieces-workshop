@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and ML Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .fact {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>10 Facts About AI and ML</h1>
+    <div id="facts-container"></div>
+
+    <script>
+        const facts = [
+            "1. AI stands for Artificial Intelligence, while ML stands for Machine Learning.",
+            "2. Machine Learning is a subset of AI that focuses on the development of algorithms that allow computers to learn from and make predictions based on data.",
+            "3. AI can be classified into two types: Narrow AI (designed for specific tasks) and General AI (which can perform any intellectual task that a human can do).",
+            "4. Deep Learning is a subset of Machine Learning that uses neural networks with many layers.",
+            "5. AI is used in various applications, including speech recognition, image processing, and autonomous vehicles.",
+            "6. The first AI program was written in 1951 by Christopher Strachey, which played checkers.",
+            "7. Machine Learning algorithms can be supervised, unsupervised, or semi-supervised.",
+            "8. AI can analyze large amounts of data quickly, making it valuable in fields like healthcare and finance.",
+            "9. Natural Language Processing (NLP) is a branch of AI that helps machines understand and interpret human language.",
+            "10. The future of AI and ML holds potential for advancements in robotics, personalized medicine, and smart cities."
+        ];
+
+        const factsContainer = document.getElementById('facts-container');
+        facts.forEach(fact => {
+            const factDiv = document.createElement('div');
+            factDiv.className = 'fact';
+            factDiv.textContent = fact;
+            factsContainer.appendChild(factDiv);
+        });
+    </script>
+</body>
+</html>
